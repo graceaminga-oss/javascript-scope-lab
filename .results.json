@@ -2,12 +2,12 @@
   "stats": {
     "suites": 6,
     "tests": 13,
-    "passes": 9,
+    "passes": 10,
     "pending": 0,
-    "failures": 4,
-    "start": "2026-04-03T16:06:30.208Z",
-    "end": "2026-04-03T16:06:30.732Z",
-    "duration": 524
+    "failures": 3,
+    "start": "2026-04-03T16:15:21.193Z",
+    "end": "2026-04-03T16:15:21.709Z",
+    "duration": 516
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
       "fullTitle": "index.js burgers is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,22 +55,16 @@
     {
       "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
       "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
       "fullTitle": "index.js addBurger when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false",
-        "showDiff": true,
-        "actual": "true",
-        "expected": "false",
-        "stack": "AssertionError: Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false\n    at Context.<anonymous> (test\\indexTest.js:51:49)\n    at process.processImmediate (node:internal/timers:504:21)"
-      }
+      "err": {}
     },
     {
       "title": "has a condition with the value of true",
@@ -78,10 +72,10 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)/",
+        "message": "Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     },
     {
@@ -90,10 +84,10 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
+        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     },
     {
@@ -102,10 +96,10 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
+        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     },
     {
@@ -126,28 +120,15 @@
   "pending": [],
   "failures": [
     {
-      "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
-      "fullTitle": "index.js addBurger when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false",
-        "showDiff": true,
-        "actual": "true",
-        "expected": "false",
-        "stack": "AssertionError: Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false\n    at Context.<anonymous> (test\\indexTest.js:51:49)\n    at process.processImmediate (node:internal/timers:504:21)"
-      }
-    },
-    {
       "title": "has a condition with the value of true",
       "fullTitle": "index.js if statement has a condition with the value of true",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)/",
+        "message": "Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     },
     {
@@ -156,10 +137,10 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
+        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     },
     {
@@ -168,10 +149,10 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
+        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
         "showDiff": false,
-        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n\r\naddBurger();\r\n\r\nconsole.log(burgers);\r\nconsole.log(featuredDrink);",
-        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n\\r\\naddBurger();\\r\\n\\r\\nconsole.log(burgers);\\r\\nconsole.log(featuredDrink);' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:504:21)"
+        "actual": "const burgers = [\"Hamburger\", \"Cheeseburger\"];\r\n\r\nlet featuredDrink = \"Strawberry Milkshake\";\r\n\r\nfunction addBurger() {\r\n  const newBurger = \"Flatburger\";\r\n  burgers.push(newBurger);\r\n}\r\n\r\nif (true) {\r\n  const anotherNewBurger = \"Maple Bacon Burger\";\r\n  burgers.push(anotherNewBurger);\r\n}\r\n\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = \"The JavaShake\";\r\n}\r\n",
+        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected 'const burgers = [\"Hamburger\", \"Cheeseburger\"];\\r\\n\\r\\nlet featuredDrink = \"Strawberry Milkshake\";\\r\\n\\r\\nfunction addBurger() {\\r\\n  const newBurger = \"Flatburger\";\\r\\n  burgers.push(newBurger);\\r\\n}\\r\\n\\r\\nif (true) {\\r\\n  const anotherNewBurger = \"Maple Bacon Burger\";\\r\\n  burgers.push(anotherNewBurger);\\r\\n}\\r\\n\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \"The JavaShake\";\\r\\n}\\r\\n' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:504:21)"
       }
     }
   ],
@@ -186,7 +167,7 @@
     {
       "title": "is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
       "fullTitle": "index.js burgers is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -221,6 +202,13 @@
     {
       "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
       "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
+      "fullTitle": "index.js addBurger when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

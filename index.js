@@ -15,8 +15,3 @@ if (true) {
 function changeFeaturedDrink() {
   featuredDrink = "The JavaShake";
 }
-
-addBurger();
-
-console.log(burgers);
-console.log(featuredDrink);
